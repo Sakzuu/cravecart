@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 1rem;
+
+    /* Warm off-white background #F7F3EA */
+    --background: 0.967 0.018 85;
+    /* Near-black text #1C1B1A */
+    --foreground: 0.18 0.006 70;
+    /* White card #FFFFFF */
+    --card: 1 0 0;
+    --card-foreground: 0.18 0.006 70;
+    --popover: 1 0 0;
+    --popover-foreground: 0.18 0.006 70;
+    /* Burnt orange #D9792A */
+    --primary: 0.63 0.14 50;
+    --primary-foreground: 1 0 0;
+    /* Light cream secondary */
+    --secondary: 0.94 0.025 80;
+    --secondary-foreground: 0.18 0.006 70;
+    /* Muted gray-brown #6B625A */
+    --muted: 0.94 0.018 80;
+    --muted-foreground: 0.46 0.022 60;
+    /* Pale orange accent #F2D7B8 */
+    --accent: 0.88 0.048 72;
+    --accent-foreground: 0.18 0.006 70;
+    /* Destructive */
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 1 0 0;
+    /* Border #EDE3D6 */
+    --border: 0.91 0.022 75;
+    --input: 0.91 0.022 75;
+    --ring: 0.63 0.14 50;
+    /* Chart colors */
+    --chart-1: 0.63 0.14 50;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+    /* Sidebar */
+    --sidebar: 0.967 0.018 85;
+    --sidebar-foreground: 0.18 0.006 70;
+    --sidebar-primary: 0.63 0.14 50;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.88 0.048 72;
+    --sidebar-accent-foreground: 0.18 0.006 70;
+    --sidebar-border: 0.91 0.022 75;
+    --sidebar-ring: 0.63 0.14 50;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+    font-size: 15px;
+  }
+}
